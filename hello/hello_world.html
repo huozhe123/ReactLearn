@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>EXAM</title>
+	</head>
+	<body>
+    <h2 class="title"></h2>
+    <button id="btn">刷新</button>
+  </body>
+  <script>
+    //定义数据
+    let message = "Hello World";
+    //将数据显示在h2元素中
+    const titleEl = document.getElementsByClassName("title")[0];
+    titleEl.innerHTML=message;
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click",e=>{
+      message="Hello Chenss";
+      titleEl.innerHTML=message;
+    })
+  </script>
+</html>

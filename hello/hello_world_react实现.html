@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>EXAM</title>
+	</head>
+	<body>
+    <div>Header</div>
+    <div id="app">app</div>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  
+    <script type="text/babel">
+    let message = "Hello World";
+    function btnClick(){
+      message="Hello Zhangsan";
+      console.log(message)
+      render();
+    }
+      function render(){
+        ReactDOM.render(
+        <div>
+        <h2>{message}</h2>
+        <button onClick={btnClick}>刷新</button>
+        </div>,
+        document.getElementById("app"))
+      }
+      render();
+    class App extends React.Component{
+      constructor(){
+        super();
+        this.state={
+          message: 'Hello World'
+        }
+      }
+      onClick() {
+        this.setState(
+         { message:"Hello State"}
+        )
+      }
+      render(){
+        return (<div><h2>{this.state.message}</h2>
+           <button onClick={this.onClick.bind(this)}>刷新</button></div>)
+      }
+    }
+    ReactDOM.render(<App/>,document.getElementById("app"))
+    </script>
+  </body>
+</html>
