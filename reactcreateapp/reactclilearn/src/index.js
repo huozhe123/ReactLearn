@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './react的solt/App';
+import App from './跨组件通信/App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(

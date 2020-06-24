@@ -1,0 +1,14 @@
+.tab-Control{
+  display: flex;
+  list-style: none;
+}
+.tab-item{
+  flex:1;
+}
+.tab-item span{
+  width:20px;
+}
+.tab-item span.tab-active{
+  border-bottom: 2px solid tomato;
+  color:red;
+}
