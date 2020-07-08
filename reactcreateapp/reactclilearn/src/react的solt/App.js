@@ -13,7 +13,6 @@ export default class App extends Component {
         <NavBar2 leftSolt={<span>aaa</span>}
                  centerSolt={<span>bbb</span>}
                  rightSolt={<span>ccc</span>}>
-
         </NavBar2>
       </div>
     )
